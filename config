@@ -1,0 +1,5 @@
+Host core-01
+  User     core
+  HostName 172.17.8.101
+  IdentityFile /vagrant/insecure_private_key
+  StrictHostKeyChecking no
