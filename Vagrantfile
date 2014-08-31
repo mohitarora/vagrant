@@ -11,7 +11,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.network :forwarded_port, guest: 8080, host: 8080, protocol: 'tcp'
   config.vm.network :forwarded_port, guest: 8081, host: 8081, protocol: 'tcp'
-  config.vm.network :forwarded_port, guest: 80, host: 8082, protocol: 'tcp'
+  config.vm.network :forwarded_port, guest: 8082, host: 8082, protocol: 'tcp'
+  config.vm.network :forwarded_port, guest: 8083, host: 8083, protocol: 'tcp'
+  config.vm.network :forwarded_port, guest: 8084, host: 8084, protocol: 'tcp'
+  config.vm.network :forwarded_port, guest: 80, host: 8085, protocol: 'tcp'
   config.vm.network :forwarded_port, guest: 8500, host: 8500, protocol: 'tcp'
   config.vm.network :forwarded_port, guest: 5050, host: 5050, protocol: 'tcp'
   config.vm.network :forwarded_port, guest: 5051, host: 5051, protocol: 'tcp'
